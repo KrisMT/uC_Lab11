@@ -2,7 +2,7 @@ menu "Example Configuration"
 
     config BROKER_URL
     string "Broker URL"
-    default "mqtt://192.168.1.30"
+    default "mqtt://192.168.0.11"
     help
         URL for MQTT Broker
 
