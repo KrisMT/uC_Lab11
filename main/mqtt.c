@@ -79,6 +79,8 @@ void mqtt_app_start(void)
 {
   esp_mqtt_client_config_t mqtt_cfg = {
     .broker.address.uri = CONFIG_BROKER_URL,
+    .credentials.username = "test",
+    .credentials.password = "test",
   };
 
   esp_mqtt_client_handle_t client = esp_mqtt_client_init(&mqtt_cfg);
